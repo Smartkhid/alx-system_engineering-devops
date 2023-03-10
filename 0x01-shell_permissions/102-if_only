@@ -1,2 +1,2 @@
-#!/bin/bash 
-(test "$(stat -c '%U' hello)" = "guillaume") & { read x && chown betty hello; }
+#!/bin/bash
+
