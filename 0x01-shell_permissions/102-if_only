@@ -1,2 +1,2 @@
 #!/bin/bash 
-if [ $(stat -c '%U' hello) = 'guillaume'] chown betty hello
+(test "$(stat -c '%U' hello)" = "guillaume") & { read x && chown betty hello; }
